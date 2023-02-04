@@ -1,0 +1,93 @@
+###
+
+POST http://localhost:8000/api/auth/login
+Accept: application/json
+content-type: application/json
+
+{
+    "email": "jan@email.com",
+    "password": "1234"
+}
+
+###
+
+POST http://localhost:8000/api/auth/login
+Accept: application/json
+content-type: application/json
+
+{
+    "email": "marta@email.com",
+    "password": "1234"
+}
+
+###
+GET http://localhost:8000/api/countries
+Accept: application/json
+
+###
+GET http://localhost:8000/api/countries
+Accept: application/json
+Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjgwMDAvYXBpL2F1dGgvbG9naW4iLCJpYXQiOjE2NTI2MzY2NzUsImV4cCI6MTY1MjY0MDI3NSwibmJmIjoxNjUyNjM2Njc1LCJqdGkiOiJyUHF2Q25NNm9rVGpqUFB0Iiwic3ViIjoiMSIsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.2xDuLUONnx-EeAHF-V89c9AHXP6guvtQHZ1MX88egWM
+
+###
+PUT http://127.0.0.1:8000/api/countries/7
+Accept: application/json
+content-type: application/json
+Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjgwMDAvYXBpL2F1dGgvbG9naW4iLCJpYXQiOjE2NTI2MzY2NzUsImV4cCI6MTY1MjY0MDI3NSwibmJmIjoxNjUyNjM2Njc1LCJqdGkiOiJyUHF2Q25NNm9rVGpqUFB0Iiwic3ViIjoiMSIsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.2xDuLUONnx-EeAHF-V89c9AHXP6guvtQHZ1MX88egWM
+
+{
+    "name": "Polska",
+    "code": "PL",
+    "currency": "złoty",
+    "area": 3817900,
+    "language": "POLSKI"
+}
+
+###
+PUT http://127.0.0.1:8000/api/countries/6
+Accept: application/json
+content-type: application/json
+Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjgwMDAvYXBpL2F1dGgvbG9naW4iLCJpYXQiOjE2NTI2MzY2NzUsImV4cCI6MTY1MjY0MDI3NSwibmJmIjoxNjUyNjM2Njc1LCJqdGkiOiJyUHF2Q25NNm9rVGpqUFB0Iiwic3ViIjoiMSIsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.2xDuLUONnx-EeAHF-V89c9AHXP6guvtQHZ1MX88egWM
+
+{
+    "name": "Pakistan",
+    "code": "PK",
+    "currency": "rupia pakistańksa",
+    "area": 803940,
+    "language": "URDU"
+}
+
+######
+PUT http://127.0.0.1:8000/api/trips/1
+Accept: application/json
+content-type: application/json
+Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjgwMDAvYXBpL2F1dGgvbG9naW4iLCJpYXQiOjE2NTI2MzY2NzUsImV4cCI6MTY1MjY0MDI3NSwibmJmIjoxNjUyNjM2Njc1LCJqdGkiOiJyUHF2Q25NNm9rVGpqUFB0Iiwic3ViIjoiMSIsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.2xDuLUONnx-EeAHF-V89c9AHXP6guvtQHZ1MX88egWM
+
+{
+    "name": "Kolorado",
+    "continent": "Ameryka Północna",
+    "period": 7,
+    "description": "jest wyżynno-górzystym stanem, którego średnia wysokość nad poziomem morza przekracza 2000 m. Najwyższy szczyt Kolorado, Mount Elbert, wznosi się na 4399 m n.p.m. Zachodnią część stanu zajmują Góry Skaliste i Wyżyna Kolorado, wschodnią – obszar Wielkich Równin.",
+    "price": "25000.00",
+    "country_id": 1
+}
+
+######
+PUT http://127.0.0.1:8000/api/trips/1
+Accept: application/json
+content-type: application/json
+Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjgwMDAvYXBpL2F1dGgvbG9naW4iLCJpYXQiOjE2NTI2MzY2NzUsImV4cCI6MTY1MjY0MDI3NSwibmJmIjoxNjUyNjM2Njc1LCJqdGkiOiJyUHF2Q25NNm9rVGpqUFB0Iiwic3ViIjoiMSIsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.2xDuLUONnx-EeAHF-V89c9AHXP6guvtQHZ1MX88egWM
+
+{
+    "name": "Kolorado",
+    "continent": "Ameryka Północna",
+    "period": 7,
+    "description": "jest wyżynno-górzystym stanem, którego średnia wysokość nad poziomem morza przekracza 2000 m. Najwyższy szczyt Kolorado, Mount Elbert, wznosi się na 4399 m n.p.m. Zachodnią część stanu zajmują Góry Skaliste i Wyżyna Kolorado, wschodnią – obszar Wielkich Równin.",
+    "price": "25000.00",
+    "country_id": 1
+}
+
+######
+POST http://localhost:8000/api/auth/me
+Accept: application/json
+Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjgwMDAvYXBpL2F1dGgvbG9naW4iLCJpYXQiOjE2NTI3MzMzODksImV4cCI6MTY1MjczNjk4OSwibmJmIjoxNjUyNzMzMzg5LCJqdGkiOiJRcjBPT1R5TXhtdVFOdFRPIiwic3ViIjoiMSIsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjciLCJyb2xlIjoiYWRtaW4ifQ.H8Lip-00Ga-28K6NnArY2ji5UXlyWPnyUoaMm1abMLI
